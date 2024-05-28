@@ -753,7 +753,7 @@
                   <div class="showcase">
 
                   <a href="#" class="showcase-img-box">
-                      <img src="./assets/images/products/<% out.print(image);%>" alt="<% out.print(name); %>" width="75" height="75"
+                      <img src="./assets/images/<% out.print(image);%>" alt="<% out.print(name); %>" width="75" height="75"
                       class="showcase-img">
                   </a>
 
@@ -825,9 +825,8 @@
 
                 <div class="showcase-banner">
 
-                  <img src="./assets/images/products/<% out.print(image); %>" alt="<% out.print(name); %>" width="300" class="product-img default">
-                  <img src="./assets/images/products/<% out.print(image); %>" alt="<% out.print(name); %>" width="300" class="product-img hover">
-
+                  <img src="./assets/images/<% out.print(image); %>" alt="<% out.print(name); %>" width="300" class="product-img default">
+                  <img src="./assets/images/<% out.print(image); %>" alt="<% out.print(name); %>" width="300" class="product-img hover">
 
                   <div class="showcase-actions">
 
