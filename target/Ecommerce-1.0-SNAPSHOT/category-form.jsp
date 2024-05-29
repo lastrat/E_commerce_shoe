@@ -1,3 +1,16 @@
+<%
+Object user = session.getAttribute("role");
+                if(user==null){
+                response.sendRedirect("home.jsp");
+    }
+                else{
+                String role = (String)session.getAttribute("role");
+                if ("user".equals(role)){
+                response.sendRedirect("home.jsp");
+                    }
+                
+    }
+%>
 <%-- 
     Document   : category-form
     Created on : May 26, 2024, 12:36:42 PM

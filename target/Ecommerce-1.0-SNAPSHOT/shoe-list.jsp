@@ -3,6 +3,19 @@
     Created on : May 24, 2024, 2:18:05 AM
     Author     : Admin
 --%>
+<%
+Object user = session.getAttribute("role");
+                if(user==null){
+                response.sendRedirect("home.jsp");
+    }
+                else{
+                String role = (String)session.getAttribute("role");
+                if ("user".equals(role)){
+                response.sendRedirect("home.jsp");
+                    }
+                
+    }
+%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>

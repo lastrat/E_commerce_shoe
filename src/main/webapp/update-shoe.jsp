@@ -5,6 +5,19 @@
 --%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
+<%
+Object user = session.getAttribute("role");
+                if(user==null){
+                response.sendRedirect("home.jsp");
+    }
+                else{
+                String role = (String)session.getAttribute("role");
+                if ("user".equals(role)){
+                response.sendRedirect("home.jsp");
+                    }
+                
+    }
+%>
 <!DOCTYPE html>
 <html>
 <head>

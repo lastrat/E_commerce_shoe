@@ -1,11 +1,11 @@
 <%
-Object username = session.getAttribute("role");
-                if(username==null){
+Object user = session.getAttribute("role");
+                if(user==null){
                 response.sendRedirect("home.jsp");
     }
                 else{
-                
-                if (username == "user"){
+                String role = (String)session.getAttribute("role");
+                if ("user".equals(role)){
                 response.sendRedirect("home.jsp");
                     }
                 
